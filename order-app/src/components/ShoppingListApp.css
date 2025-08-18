@@ -1,0 +1,91 @@
+.shopping-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  border-right: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.category .icon {
+  margin-right: 0.5rem;
+  font-size: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.items-table th,
+.items-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+.items-table img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.items-table input {
+  width: 50px;
+  padding: 2px;
+  text-align: center;
+}
+
+.delete-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.order-btn {
+  background: #d35400;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.total-section {
+  background: #f5f5f5;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  font-size: 18px;
+}
+
+.add-item-form {
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.add-item-form input {
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 5px;
+  width: 200px;
+}
