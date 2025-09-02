@@ -1,0 +1,80 @@
+.contact-div {
+    /* width: 100%; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #3282B8, #1B262C);
+    padding: 40px 0px;
+}
+
+.contact {
+    width: 100%;
+    max-width: 600px;
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+}
+
+.contact h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1B262C;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #BBE1FA;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #3282B8;
+    box-shadow: 0 0 8px rgba(50, 130, 184, 0.5);
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+button {
+    background: #3282B8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #0F4C75;
+    transform: scale(1.05);
+}
+
+.output{
+    margin-top: 70%;
+    color: #BBE1FA;
+    text-align: center;
+    /* align-items: center; */
+}

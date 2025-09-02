@@ -1,0 +1,94 @@
+.about-section {
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #0F4C75, #1B262C);
+    color: #BBE1FA;
+    box-sizing: border-box;
+    gap: 40px;
+}
+
+.detail {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #BBE1FA, #3282B8);
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+}
+
+.detail p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #EAF6FF;
+}
+
+/* Image */
+.about-section img {
+    width: 380px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+.resume-btn,
+.hire-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #BBE1FA;
+    color: #1B262C;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.resume-btn:hover,
+.hire-btn:hover {
+    background: #3282B8;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* GitHub Stats */
+.github-stats {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.follower {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.follower:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}

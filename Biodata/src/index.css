@@ -1,0 +1,116 @@
+:root {
+  /* Typography */
+  font-family: "Poppins", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* Colors */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.92);
+  background: linear-gradient(135deg, #1B262C, #0F4C75);
+
+  /* Rendering optimization */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Spacing scale */
+  --spacing: 1rem;
+  --radius: 10px;
+  --transition: 0.3s ease;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: var(--spacing);
+}
+
+/* Headings */
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+  background: linear-gradient(90deg, #BBE1FA, #3282B8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #BBE1FA;
+  text-decoration: none;
+  position: relative;
+  transition: color var(--transition);
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #3282B8;
+  transition: width var(--transition);
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+a:hover::after {
+  width: 100%;
+}
+
+/* Buttons */
+button {
+  border-radius: var(--radius);
+  border: none;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background: #3282B8;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: background var(--transition), transform var(--transition);
+}
+
+button:hover {
+  background: #0F4C75;
+  transform: translateY(-3px);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid #BBE1FA;
+  outline-offset: 2px;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background: linear-gradient(135deg, #FFFFFF, #EAF6FF);
+  }
+
+  a {
+    color: #3282B8;
+  }
+
+  a:hover {
+    color: #0F4C75;
+  }
+
+  button {
+    background: #3282B8;
+    color: #fff;
+  }
+}
