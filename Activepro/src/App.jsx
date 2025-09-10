@@ -1,15 +1,17 @@
-import Home from "../../Activepro/src/Screens/Home/Home";
+
 import "./App.css";
+import Home from "./Screens/Home/Home";
 
 
 function App() {
   return (
     <>
-      
       <Home/>
-
+      
     </>
   );
 }
     
 export default App;
+
+
