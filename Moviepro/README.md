@@ -24,6 +24,10 @@ A simple and interactive React app to manage your favorite movies. Users can add
 
 
 
+https://github.com/user-attachments/assets/2004d6c8-5064-4d70-a1f7-153ca615eba2
+
+
+
 
 ## Getting Started
 
