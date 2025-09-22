@@ -14,7 +14,6 @@ export default function Home({ products, setCartList }) {
                         <h3>{product.title}</h3>
                         <h3>{product.price}</h3>
                         <p>{product.category}</p>
-                       
 
                         <button onClick={() => {
                             console.log(product);
@@ -33,22 +32,3 @@ export default function Home({ products, setCartList }) {
         </div>
     )
 }
-
-// COMPONENT-->STATE-->PROP==>PASS-->DISPLAY(ONLY READABLE)
-
-//
-
-// day1
-// login --> home
-// navbar - menus - click navigate - home
-// login page -- button(replace:true) --> home
-
-// day2
-// home page - display products
-// on click on product view -> navigate to product detail page
-// display selected product in detail page.
-// product page
-// detail page
-
-// day3
-// add to cart - 

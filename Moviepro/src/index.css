@@ -1,0 +1,110 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+/* App container */
+div {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Headings */
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Card-like sections */
+section, form, .session-box {
+  background: white;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+input:focus {
+  /* border-color: #007bff; */
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.add {
+  background: #007bff;
+  color: white;
+}
+
+button.edit {
+  background: #f0ad4e;
+  color: white;
+}
+
+button.delete {
+  background: #d9534f;
+  color: white;
+}
+
+button.save {
+  background: #5cb85c;
+  color: white;
+}
+
+button.cancel {
+  background: #6c757d;
+  color: white;
+}
+
+/* Movie list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Session demo */
+.session-box {
+  border-left: 6px solid #6f42c1;
+}

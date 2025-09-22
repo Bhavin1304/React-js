@@ -1,7 +1,7 @@
 import React from 'react'
 import { products } from '../json/products'
 import { useLocation } from 'react-router'
-import "./Product.css";
+import "./product.css"
 
 export default function ProductDetail() {
 
@@ -18,7 +18,6 @@ export default function ProductDetail() {
             <p>{product.description}</p>
             <h3>{product.price}</h3>
             <p>{product.category}</p>
-
         </div>
     )
 }
