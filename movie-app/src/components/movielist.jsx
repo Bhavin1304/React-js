@@ -20,7 +20,7 @@ function MovieList() {
           <div className="col-md-3 mb-3" key={m.id}>
             <div className="card">
               <img
-                src={`http://www.omdbapi.com/?i=tt3896198&apikey=7044c2d${m.poster_path}`}
+                src={`https://api.themoviedb.org/3${m.poster_path}`}
                 alt={m.title}
                 className="card-img-top"
               />

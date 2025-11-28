@@ -15,10 +15,11 @@ export const fetchPopularMovies = () => async (dispatch) => {
   });
 };
 
+
 export const fetchMovieDetails = (id) => async (dispatch) => {
   dispatch({ type: "LOADING" });
 
-  const res = await axios.get(`http://www.omdbapi.com/?i=tt3896198&apikey=7044c2d${KEY}`);
+  const res = await axios.get(`${API}/movie/${id}?api_key=${KEY}`);
 
   dispatch({
     type: "SET_MOVIE_DETAILS",
