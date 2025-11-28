@@ -9,7 +9,7 @@ const { id } = useParams();
 const dispatch = useDispatch();
 const { selectedMovie, loading } = useSelector((s) => s.movie);
 
-
+    
 useEffect(() => {
 dispatch(fetchMovieDetails(id));
 }, [id, dispatch]);
