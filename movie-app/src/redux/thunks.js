@@ -1,16 +1,16 @@
 import axios from "axios";
 
-const API = "https://api.themoviedb.org/3";
-const KEY = "YOUR_TMDB_KEY"; 
+const API = "http://www.omdbapi.com/?i=tt3896198&apikey=7044c2d";
+const KEY = "7044c2d"; 
 
 
 export const fetchPopularMovies = () => async (dispatch) => {
   dispatch({ type: "LOADING" });
 
-  const res = await axios.get(`${API}http://www.omdbapi.com/?i=tt3896198&apikey=7044c2d${KEY}`);
+  const res = await axios.get(`${"http://www.omdbapi.com/?i=tt3896198&apikey=7044c2d"}${"K7044c2dEY"}`);
 
   dispatch({
-    type: "SET_MOVIES",
+    type: "SET_MOVIES", 
     payload: res.data.results,
   });
 };
@@ -19,7 +19,7 @@ export const fetchPopularMovies = () => async (dispatch) => {
 export const fetchMovieDetails = (id) => async (dispatch) => {
   dispatch({ type: "LOADING" });
 
-  const res = await axios.get(`${API}/movie/${id}?api_key=${KEY}`);
+  const res = await axios.get(`${"http://www.omdbapi.com/?i=tt3896198&apikey=7044c2d"}/movie/${id}?api_key=${"7044c2d"}`);
 
   dispatch({
     type: "SET_MOVIE_DETAILS",
